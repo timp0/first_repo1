@@ -23,6 +23,7 @@ then
         numlines=$(wc -l $myfilename | cut -d ' ' -f1)
         echo $numlines
         numchars=$(wc -m $myfilename | cut -d ' ' -f1)
+        echo "My number of chars is:"
         echo $numchars
         numATATATAT=$(grep -c "ATATATAT" $myfilename)
         echo $numATATATAT
