@@ -22,7 +22,7 @@ then
         echo $humanreadable
         numlines=$(wc -l $myfilename | cut -d ' ' -f1)
         echo $numlines
-        numchars=$(wc -m $myfilename)
+        numchars=$(wc -m $myfilename | cut -d ' ' -f1)
         echo $numchars
         numATATATAT=$(grep -c "ATATATAT" $myfilename)
         echo $numATATATAT
